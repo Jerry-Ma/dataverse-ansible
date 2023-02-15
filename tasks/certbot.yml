@@ -41,4 +41,4 @@
     name: certbot-renew.timer
     state: started
     enabled: yes
-  when: letsencrpyt.certbot.autonew == true
+  when: letsencrypt.certbot.autorenew == true
