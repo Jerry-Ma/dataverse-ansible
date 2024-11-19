@@ -12,8 +12,8 @@
     dest: '/var/lib/pgsql/{{ db.postgres.version }}/data/log/'
     mode: '0755'
   loop:
-    - "{{ dataverse_raw_repo }}/develop/scripts/database/querycount/parse.pl"
-    - "{{ dataverse_raw_repo }}/develop/scripts/database/querycount/count.pl"
+    - "https://raw.githubusercontent.com/IQSS/dataverse/develop/scripts/database/querycount/parse.pl"
+    - "https://raw.githubusercontent.com/IQSS/dataverse/develop/scripts/database/querycount/count.pl"
 
 # uncomment this if anyone ever works on parse/count.pl
 #- name: "place Leonid's PERL scripts from branch"
