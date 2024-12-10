@@ -168,7 +168,7 @@
 
 - name: really wait for Payara to become ready
   ansible.builtin.pause:
-    seconds: 120
+    seconds: 150
 
 # install.py doesn't currently log this output, nothing sensitive in install.out
 #- name: negate need for password aliases

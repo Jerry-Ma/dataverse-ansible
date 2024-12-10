@@ -91,7 +91,7 @@
 
 - name: give Payara ample time to become ready
   ansible.builtin.pause:
-    seconds: 120
+    seconds: 150
 
 - name: start solr indexing -- if this was an upgrade to an existing install, the install scripts reset the solr indexes
   ansible.builtin.get_url:
